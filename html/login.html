@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -21,23 +22,23 @@
         <nav id="navbar">
             <div class="container">
                 <div class="nav">
-                    <h1 class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
+                    <h1 data-aos="fade-right" class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
                     
                     <button class="nav-toggle">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <ul class="nav-menu">
-                        <li class="nav-items"><a class="nav-menu-link" href="../index.html">Home</a></li>
-                        <li class="nav-items"><a class="nav-menu-link current" href="../html/login.html">Login</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
-                        <li class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../index.html">Home</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link current" href="../html/login.html">Login</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container-form sign-up">
+    <div data-aos="zoom-out-right" class="container-form sign-up">
         <div class="welcome-back">
             <div class="message">
                 <h2>Bienvenido al Hotel HBB</h2>
@@ -45,7 +46,7 @@
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form action="POST" class="formulario">
+        <form data-aos="fade-up" action="POST" class="formulario">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -65,7 +66,7 @@
             <input class="in" type="button" value="Registrarse" name="registrar">
         </form>
     </div>
-    <div class="container-form sign-in">
+    <div data-aos="fade-up" class="container-form sign-in">
         <form action="GET" class="formulario">
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
@@ -99,6 +100,13 @@
     </div>
     <script type="module" src="../js/script.js"></script>
     <script type="module" src="../js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+
+        });
+    </script>
 </body>
 
 </html>
