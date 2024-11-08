@@ -406,7 +406,6 @@ header {
         width: 33.3%;
         margin-bottom: 20px;
         padding: 3rem;
-        ;
         text-align: center;
         transition: background 0.5s ease;
     }
@@ -570,6 +569,70 @@ header {
         line-height: 60px;
     }
 
+    .container {
+        max-width: 100%;
+    }
+    
+    .services-form-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .servicesTittle {
+        text-align: center;
+        margin-bottom: 1em;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .services-form {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 6em 0;
+    }
+    
+    .servicesData {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 0;
+        background-color: #fff;
+        padding-top: 1em;
+    }
+    
+    .serviceItem {
+        width: 30%;
+        margin: 0 1em 1.5em 1em;
+        padding: 1em;
+        border: 2px solid #f7c08a;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+    }
+    
+    .serviceItem:hover {
+        background-color: #444;
+        color: #fff;
+        border: 3px solid #fe972f;
+        transform: scale(1.05);
+        transition: background 0.3s all;
+    }
+    
+    .serviceItem img {
+        width: 100%;
+        border-radius: 20px;
+        transition: border-radius 0.3s;
+    }
+    
+    .servicesTittle h2 {
+        font-size: 1em;
+        color: #f7c08a;
+    }
+
     .nav-menu {
         flex-direction: column;
         align-items: center;
@@ -614,6 +677,7 @@ header {
     .nav-menu-visible {
         left: 0;
         transition: left 0.5s ease-in-out;
+        
     }
 
 }
