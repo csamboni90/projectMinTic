@@ -10,64 +10,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="description" content="Welcome to the most extraordinary hote in Colombia">
     <title>Hotel Bing Bang</title>
 </head>
-
-<body>
-    <section>
-        <header>
-            <nav id="navbar">
-                <div class="container">
-                    <div class="nav">
-                        <h1 data-aos="fade-right" class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
-                        <button class="nav-toggle" aria-label="Abrir menú">
-                            <i class="fas fa-bars nav-toggle"></i>
-                        </button>
-                        <ul class="nav-menu">
-                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link current" href="../index.html">Home</a></li>
-                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
-                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
-                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a>
-                            </li>
-                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+<section>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="nav">
+                    <h1 class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
+                    <button class="nav-toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars nav-toggle"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li class="nav-items"><a class="nav-menu-link current" href="../index.html">Home</a></li>
+                        <li class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
+                        <li class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
+                        <li class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
+                        <li class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-    </section>
+            </div>
+        </nav>
+    </header>
     <section id="centro">
-        <div id="showcase" data-aos="zoom-in" >
-            <div class="container" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+        <div id="showcase">
+            <div class="container">
                 <div class="showcase-content">
                     <h1>
                         <span class="text-primary">Enjoy</span> Your Stay
                     </h1>
                     <p class="lead">Discover the ultimate experience in Colombia</p>
 
-                    <a href="html/about.html" class="btn">About us</a>
+                        <a href="html/about.html" class="btn">About us</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
-    <section data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom" class="bg-dark" id="home-info">
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom" class="info-img">
+    <section class="bg-dark" id="home-info">
+        <div class="info-img">
+
         </div>
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom" class="info-content">
+        <div class="info-content">
             <h2>
                 <span class="text-primary">The History</span>
                 Of Our Hotel
             </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, iste! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quod, corporis.</p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, iste!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                corporis.
+            </p>
             <a href="html/about.html" class="btn btn-light">Read More</a>
         </div>
     </section>
@@ -79,8 +74,7 @@
             <h3>
                 <span class="text-primary">Great</span> Location
             </h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatibus! Lorem ipsum dolor sit
-                amet
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatibus! Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quod, corporis.</p>
             <a href="html/services.html" class="btn btn-dark">Learn More</a>
         </div>
@@ -91,8 +85,7 @@
                 <span class="text-secondary">Free</span>
                 Meals
             </h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatibus! Lorem ipsum dolor sit
-                amet
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatibus! Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quod, corporis.</p>
             <a href="html/services.html" class="btn btn-light">Learn More</a>
         </div>
@@ -102,8 +95,7 @@
                 <span class="text-primary">Fitness</span>
                 Room
             </h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatibus! Lorem ipsum dolor sit
-                amet
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, voluptatibus! Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quod, corporis.</p>
             <a href="html/services.html" class="btn btn-dark">Learn More</a>
         </div>
@@ -115,13 +107,6 @@
         <p>Hotel Bing Bang &copy; 2024, All Rights Reserved</p>
     </footer>
     <script src="js/menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init({
-			duration: 1000
-/* 			once: true */
-		});
-	</script>
-</body>
+    </body>
 
 </html>
