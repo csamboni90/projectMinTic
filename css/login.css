@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    z-index: 0;
 }
 
 .container-form {

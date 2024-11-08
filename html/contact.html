@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <meta name="description" content="Welcome to the most extraordinary hote in Colombia">
         <title>Hotel Bing Bang</title>
@@ -14,23 +16,23 @@
         <nav id="navbar">
             <div class="container">
                 <div class="nav">
-                    <h1 class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
+                    <h1 data-aos="fade-right" class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
                     <button class="nav-toggle" aria-label="Abrir menú">
                         <i class="fas fa-bars nav-toggle"></i>
                     </button>
                     <ul class="nav-menu">
-                        <li class="nav-items"><a class="nav-menu-link " href="../index.html">Home</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
-                        <li class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
-                        <li class="nav-items"><a class="nav-menu-link current" href="../html/contact.html">Contact</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../index.html">Home</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link current" href="../html/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section id="contact-form" class="py-3">
+    <section data-aos="fade-right" id="contact-form" class="py-3">
         <div class="container">
             <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
             <p>Please fill out the form below to contact us</p>
@@ -55,7 +57,7 @@
 
     <div class="clr"></div>
 
-    <section id="contact-info" class="bg-light py-3">
+    <section data-aos="fade-up" id="contact-info" class="bg-light py-3">
         <div class="box bg-light">
             <i class="fa-solid fa-hotel fa-3x"></i>
             <h3>Location</h3>
@@ -80,5 +82,12 @@
         <p>Hotel Bing Bang &copy; 2024, All Rights Reserved</p>
     </footer>
     <script src="../js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: true
+		});
+	</script>
 </body>
 </html>

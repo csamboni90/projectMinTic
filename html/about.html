@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsive.css">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="description" content="Welcome to the most extraordinary hotel in Colombia">
     <title>About Bing Bang</title>
@@ -16,16 +18,16 @@
         <nav id="navbar">
             <div class="container">
                 <div class="nav">
-                    <h1 class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
+                    <h1 data-aos="fade-right" class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
                     <button class="nav-toggle" aria-label="Abrir menú">
                         <i class="fas fa-bars nav-toggle"></i>
                     </button>
                     <ul class="nav-menu">
-                        <li class="nav-items"><a class="nav-menu-link " href="../index.html">Home</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
-                        <li class="nav-items"><a class="nav-menu-link current" href="../html/about.html">About</a></li>
-                        <li class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../index.html">Home</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link current" href="../html/about.html">About</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
+                        <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,31 +36,29 @@
 
     <section id="about-info" class="bg-light py-3">
         <div class="container">
-            <div class="info-left ">
+            <div data-aos="fade-left" class="info-left ">
                 <h1>
                     <span class="text-primary">About</span> Hotel Bing Bang
                 </h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, dolorum. Placeat modi ea autem? Totam minus doloribus repudiandae corporis soluta.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium quis suscipit cumque? Nam, corrupti magni accusantium placeat vitae asperiores officiis doloribus? Ea eos explicabo molestias similique delectus porro saepe.</p>
             </div>
-            <div class="info-right">
-<!--                 <img src="../img/about.jpg" alt="About Hotel Bing Bang">
- -->            
+            <div data-aos="fade-right" class="info-right">           
             </div>
         </div>
     </section>
 
     <div class="clr"></div>
 
-    <section id="testimonials" class="py-3">
+    <section data-aos="flip-down" id="testimonials" class="py-3">
         <div class="container">
-            <div class="testimonial">
+            <div  class="testimonial">
                 <h2 class="l-heading">What Our Guest</h2>
-                <div class="testimonial bg-primary">
+                <div data-aos="fade-up" class="testimonial bg-primary">
                     <img src="../img/persona1.jpg" alt="sonia">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quo delectus repellendus autem ea illum voluptatum harum, veniam quasi, magnam suscipit. Porro, expedita. Quo, error.</p>
                 </div>
-                <div class="testimonial bg-primary">
+                <div data-aos="fade-up" class="testimonial bg-primary">
                     <img src="../img/persona3.jpg" alt="sonia">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quo delectus repellendus autem ea illum voluptatum harum, veniam quasi, magnam suscipit. Porro, expedita. Quo, error.</p>
                 </div>
@@ -74,5 +74,11 @@
     
     <script src="../js/script.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+		});
+	</script>
 </body>
 </html>
