@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="description" content="Welcome to the most extraordinary hote in Colombia">
     <title>Hotel Bing Bang</title>
@@ -21,17 +22,17 @@
             <nav id="navbar">
                 <div class="container">
                     <div class="nav">
-                        <h1 class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
+                        <h1 data-aos="fade-right" class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
                         <button class="nav-toggle" aria-label="Abrir menú">
                             <i class="fas fa-bars nav-toggle"></i>
                         </button>
                         <ul class="nav-menu">
-                            <li class="nav-items"><a class="nav-menu-link current" href="../index.html">Home</a></li>
-                            <li class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
-                            <li class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
-                            <li class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link current" href="../index.html">Home</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a>
                             </li>
-                            <li class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,8 +40,10 @@
         </header>
     </section>
     <section id="centro">
-        <div id="showcase">
-            <div class="container">
+        <div id="showcase" data-aos="zoom-in" >
+            <div class="container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <div class="showcase-content">
                     <h1>
                         <span class="text-primary">Enjoy</span> Your Stay
@@ -52,11 +55,13 @@
             </div>
         </div>
     </section>
-    <section class="bg-dark" id="home-info">
-        <div class="info-img">
-
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" class="bg-dark" id="home-info">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" class="info-img">
         </div>
-        <div class="info-content">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" class="info-content">
             <h2>
                 <span class="text-primary">The History</span>
                 Of Our Hotel
@@ -67,7 +72,8 @@
         </div>
     </section>
 
-    <section id="features">
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" id="features">
         <div class="box bg-light">
             <i class="fas fa-hotel fa-3x"></i>
             <h3>
@@ -109,6 +115,13 @@
         <p>Hotel Bing Bang &copy; 2024, All Rights Reserved</p>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000
+/* 			once: true */
+		});
+	</script>
 </body>
 
 </html>
