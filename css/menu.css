@@ -340,6 +340,16 @@ header {
         font-size: 36px;
     }
 
+    .servicesData {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 0;
+        background-color: #fff;
+        padding-top: 1em;
+    }
+
 
 
     /* Showcase*/
