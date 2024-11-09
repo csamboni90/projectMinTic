@@ -1,4 +1,4 @@
-import { datos } from "../data/servicesData.js";
+import { datos } from "../public/servicesData.js";
 const botonToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
