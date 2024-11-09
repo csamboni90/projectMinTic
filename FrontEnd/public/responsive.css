@@ -1,223 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* main styling */
-
-html,
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7rem;
-}
-
-header {
-    background-color: #333;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    z-index: 10;
-}
-
-.current {
-    background-color: #444;
-    color: #f49434 !important;
-
-    &:hover {
-        background-color: #222 !important;
-        color: #ffa449;
-    }
-}
-
-
-#navbar {
-    background: #333;
-    color: #fff;
-    overflow: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0%;
-    z-index: 10;
-}
-
-/* #navbar a{
-    color: #fff;
-}
-
-#navbar h1{
-    float: left;
-    line-height: 50%;
-    padding-top: 20px ;
-}
-
-#navbar ul{
-    float: right;
-    list-style: none;
-}
-
-#navbar ul li{
-    display: inline-block;
-}
-
-#navbar ul li a{
-    display: flex;
-    padding: 20px;
-    text-align: center;
-}
-
-#navbar ul li a:hover,
-#navbar ul li a.current{
-    background: #444;
-    color: #f7c08a;
-} */
-
-
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-
-    max-width: 992px;
-    margin: 0 auto;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-menu-link {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-menu-link {
-    padding: 20px 12px;
-    border-radius: 5px;
-}
-
-.nav-menu-link:hover {
-    background-color: #444;
-    color: #ffa449;
-}
-
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
-}
-
-.nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-
-.nav-items {
-    font-size: 18px;
-    margin: 0 20px;
-    line-height: 80px;
-    text-transform: uppercase;
-}
-
-.nav-toggle {
-    display: none;
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
-}
-
-.nav-toggle:hover {
-    background-color: #444;
-    color: #ffa449;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
-}
-
-.container {
-    max-width: 100%;
-}
-
-.services-form-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.servicesTittle {
-    text-align: center;
-    margin-bottom: 1em;
-    position: relative;
-    z-index: 2;
-}
-
-.services-form {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 6em 0;
-}
-
-.servicesData {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: 20;
-    background-color: #fff;
-    padding-top: 1em;
-}
-
-.serviceItem {
-    width: 30%;
-    margin: 0 1em 1.5em 1em;
-    padding: 1em;
-    border: 2px solid #f7c08a;
-    border-radius: 20px;
-    transition: background-color 0.3s, color 0.3s, border 0.3s, transform 0.3s;
-}
-
-.serviceItem:hover {
-    background-color: #444;
-    color: #fff;
-    border: 3px solid #fe972f;
-    transform: scale(1.05);
-    transition: background 0.3s all;
-}
-
-.serviceItem img {
-    width: 100%;
-    border-radius: 20px;
-    transition: border-radius 0.3s;
-}
-
-.servicesTittle h2 {
-    font-size: 1em;
-    color: #f7c08a;
-}
-
-#main-footer {
-    text-align: center;
-    background: #444;
-    color: #fff;
-    padding: 20px;
-}
 
 @media(max-width:768px) {
     * {
@@ -227,6 +7,10 @@ header {
     }
 
     /* main styling */
+
+    header {
+        height: 60px;
+    }
 
     html,
     body {
@@ -338,6 +122,16 @@ header {
 
     .l-heading {
         font-size: 36px;
+    }
+
+    .servicesData {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 0;
+        background-color: #fff;
+        padding-top: 1em;
     }
 
 
@@ -541,15 +335,6 @@ header {
 
     /* main styling */
 
-    html,
-    body {
-        line-height: 1.7rem;
-        padding-top: 0px;
-    }
-
-    header {
-        height: 60px;
-    }
 
     #contact-form {
         padding: 20%;
@@ -614,6 +399,17 @@ header {
     .nav-menu-visible {
         left: 0;
         transition: left 0.5s ease-in-out;
+    }
+
+    /* login */
+    .formulario {
+
+        width: 400px;
+        height: 95%;
+        padding: 2rem;
+        margin: 6%;
+        background-color: rgba(51, 51, 51, 0.726);
+        text-align: center;
     }
 
 }
